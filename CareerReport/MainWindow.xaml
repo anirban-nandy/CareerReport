@@ -4,7 +4,7 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         Title="Career Report"
         AllowsTransparency="True" ResizeMode="CanResizeWithGrip" Background="Transparent" 
-        WindowStyle="None" WindowStartupLocation="CenterScreen" WindowState="Maximized" MinHeight="650" MinWidth="1250">
+        WindowStyle="None" WindowStartupLocation="CenterScreen" MinHeight="720" MinWidth="1250" WindowState="Maximized">
     <Window.Resources>
         <ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>
@@ -19,7 +19,7 @@
                               BlurRadius="15"
                               ShadowDepth="3" />
         </Border.Effect>
-        <DockPanel LastChildFill="True" Margin="2" Background="White">
+        <DockPanel LastChildFill="True" Margin="2" Background="#FF525252" >
             <DockPanel DockPanel.Dock="Top" LastChildFill="True">
 
                 <UniformGrid DockPanel.Dock="Right" HorizontalAlignment="Right" Rows="1">
@@ -27,74 +27,75 @@
                      <Button Width="30" Height="30" Name="closeBtn" ToolTip="close" Style="{StaticResource TitlebarBTN}" Click="closeBtn_Click">X</Button>
                  </UniformGrid>
         </DockPanel>
-            <Grid DockPanel.Dock="Bottom">
-                <Grid.RowDefinitions>
-                    <RowDefinition Height="100"></RowDefinition>
-                    <RowDefinition Height="35"></RowDefinition>
-                    <RowDefinition Height="35"></RowDefinition>
-                    <RowDefinition Height="35"></RowDefinition>
-                    <RowDefinition Height="70"></RowDefinition>
-                    <RowDefinition Height="35"></RowDefinition>
-                    <RowDefinition Height="35"></RowDefinition>
-                    <RowDefinition Height="35"></RowDefinition>
-                    <RowDefinition Height="35"></RowDefinition>
-                    <RowDefinition Height="35"></RowDefinition>
-                    <RowDefinition Height="35"></RowDefinition>
-                    <RowDefinition Height="35"></RowDefinition>
-                </Grid.RowDefinitions>
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="250"></ColumnDefinition>
-                    <ColumnDefinition Width="150"></ColumnDefinition>
-                    <ColumnDefinition Width="200"></ColumnDefinition>
-                    <ColumnDefinition Width="50"></ColumnDefinition>
-                    <ColumnDefinition Width="150"></ColumnDefinition>
-                    <ColumnDefinition Width="200"></ColumnDefinition>
-                </Grid.ColumnDefinitions>
-
+            <DockPanel LastChildFill="True">
+                <UniformGrid DockPanel.Dock="Left">
+                    <Label></Label>
+                </UniformGrid>
                 
-                <Label Grid.Row="1" Grid.Column="1" Margin="5" Style="{StaticResource LblStyle}">Date</Label>
-                <DatePicker Grid.Row="1" Grid.Column="2" ToolTip="select a date" Margin="5" SelectedDate="{x:Static sys:DateTime.Now}" Style="{StaticResource DatepkrStyle}" Width="190"></DatePicker>
-                <Label Grid.Row="2" Grid.Column="1" Margin="5" Style="{StaticResource LblStyle}">Name</Label>
-                <TextBox Grid.Row="2" Grid.Column="2"  Style="{StaticResource commonTBtyle}" ></TextBox>
-                <Label Grid.Row="3" Grid.Column="1" Margin="5" Style="{StaticResource LblStyle}">Address</Label>
-                <TextBox Grid.Row="3" Grid.Column="2"  Style="{StaticResource commonTBtyle}" ></TextBox>
-                <Label Grid.Row="4" Grid.Column="1" Margin="5" Style="{StaticResource LblStyle}">Address Cont.</Label>
-                <TextBox Grid.Row="4" Grid.Column="2"  Style="{StaticResource commonTBtyle}" ></TextBox>
-                <Label Grid.Row="5" Grid.Column="1" Margin="5" Style="{StaticResource LblStyle}">City.</Label>
-                <TextBox Grid.Row="5" Grid.Column="2"  Style="{StaticResource commonTBtyle}" ></TextBox>
-                <Label Grid.Row="6" Grid.Column="1" Margin="5" Style="{StaticResource LblStyle}">State</Label>
-                <TextBox Grid.Row="6" Grid.Column="2"  Style="{StaticResource commonTBtyle}" ></TextBox>
-                <Label Grid.Row="7" Grid.Column="1" Margin="5" Style="{StaticResource LblStyle}">Zip</Label>
-                <TextBox Grid.Row="7" Grid.Column="2"  Style="{StaticResource commonTBtyle}" ></TextBox>
-                <Label Grid.Row="8" Grid.Column="1" Margin="5" Style="{StaticResource LblStyle}">Phone</Label>
-                <TextBox Grid.Row="8" Grid.Column="2"  Style="{StaticResource commonTBtyle}" ></TextBox>
-                <TextBox Grid.Row="9" Grid.Column="2"  Style="{StaticResource commonTBtyle}" ></TextBox>
-                <Label Grid.Row="9" Grid.Column="1" Margin="5" Style="{StaticResource LblStyle}">Fax</Label>
-                <TextBox Grid.Row="10" Grid.Column="2"  Style="{StaticResource commonTBtyle}" ></TextBox>
-                <Label Grid.Row="10" Grid.Column="1" Margin="5" Style="{StaticResource LblStyle}">Website</Label>
-                <Label Grid.Row="11" Grid.Column="1" Margin="5" Style="{StaticResource LblStyle}">Email Convention</Label>
-                <TextBox Grid.Row="11" Grid.Column="2"  Style="{StaticResource commonTBtyle}" ></TextBox>
+                <UniformGrid DockPanel.Dock="Right">
+                    <Label></Label>
+                </UniformGrid>
+                <UniformGrid DockPanel.Dock="Top">
+                    <Label></Label>
+                </UniformGrid>
+                <UniformGrid DockPanel.Dock="Bottom">
+                    <Label></Label>
+                </UniformGrid>
+                <UniformGrid DockPanel.Dock="Top" Columns="2">
+                    <Label Margin="5" Style="{StaticResource LblStyle}">Date</Label>
+                    <DatePicker ToolTip="select a date" Margin="5" SelectedDate="{x:Static sys:DateTime.Now}" ></DatePicker>
+                    <Label Margin="5" Style="{StaticResource LblStyle}">Name</Label>
+                    <TextBox Tag="enter name" Style="{StaticResource commonTBtyle}" ></TextBox>
+                    <Label Margin="5" Style="{StaticResource LblStyle}">Address</Label>
+                    <TextBox Tag="enter address" Style="{StaticResource commonTBtyle}" ></TextBox>
+                    <Label Margin="5" Style="{StaticResource LblStyle}">Address Cont.</Label>
+                    <TextBox Tag="enter address cont." Style="{StaticResource commonTBtyle}" ></TextBox>
+                    <Label Margin="5" Style="{StaticResource LblStyle}">City.</Label>
+                    <TextBox Tag="enter city" Style="{StaticResource commonTBtyle}" ></TextBox>
+                    <Label Margin="5" Style="{StaticResource LblStyle}">State</Label>
+                    <TextBox Tag="enter state" Style="{StaticResource commonTBtyle}" ></TextBox>
+                    <Label Margin="5" Style="{StaticResource LblStyle}">Zip</Label>
+                    <TextBox Tag="enter zip" Style="{StaticResource commonTBtyle}" ></TextBox>
+                    <Label Margin="5" Style="{StaticResource LblStyle}">Phone</Label>
+                    <TextBox Tag="enter phone number" Style="{StaticResource commonTBtyle}" ></TextBox>
+                    
+                    <Label Margin="5" Style="{StaticResource LblStyle}">Fax</Label>
+                    <TextBox  Tag="enter fax number" Style="{StaticResource commonTBtyle}" ></TextBox>
+                    <Label  Margin="5" Style="{StaticResource LblStyle}">Website</Label>
+                    <TextBox  Tag="enter website" Style="{StaticResource commonTBtyle}" ></TextBox>
+                    <Label  Margin="5" Style="{StaticResource LblStyle}">Email Convention</Label>
+                    <TextBox  Tag="enter email convention" Style="{StaticResource commonTBtyle}" ></TextBox>
 
 
-                
-                <Label Grid.Row="1" Grid.Column="4" Margin="5" Style="{StaticResource LblStyle}">Source of Date</Label>
-                <TextBox Grid.Row="1" Grid.Column="5"  Style="{StaticResource commonTBtyle}" ></TextBox>
-                <Label Grid.Row="2" Grid.Column="4" Margin="5" Style="{StaticResource LblStyle}">Status</Label>
-                <TextBox Grid.Row="2" Grid.Column="5"  Style="{StaticResource commonTBtyle}" ></TextBox>
-                <Label Grid.Row="3" Grid.Column="4" Margin="5" Style="{StaticResource LblStyle}">Facility Type</Label>
-                <TextBox Grid.Row="3" Grid.Column="5"  Style="{StaticResource commonTBtyle}" ></TextBox>
-                <Label Grid.Row="4" Grid.Column="4" Margin="5" Style="{StaticResource LblStyle}">Unique Contact Id</Label>
-                <TextBox Grid.Row="4" Grid.Column="5"  Style="{StaticResource commonTBtyle}" ></TextBox>
-                <Label Grid.Row="5" Grid.Column="4" Margin="5" Style="{StaticResource LblStyle}">First Name</Label>
-                <TextBox Grid.Row="5" Grid.Column="5"  Style="{StaticResource commonTBtyle}" ></TextBox>
-                <Label Grid.Row="6" Grid.Column="4" Margin="5" Style="{StaticResource LblStyle}">Last Name</Label>
-                <TextBox Grid.Row="6" Grid.Column="5"  Style="{StaticResource commonTBtyle}" ></TextBox>
-                <Label Grid.Row="7" Grid.Column="4" Margin="5" Style="{StaticResource LblStyle}">Position</Label>
-                <TextBox Grid.Row="7" Grid.Column="5"  Style="{StaticResource commonTBtyle}" ></TextBox>
 
-                <Button Grid.Row="11" Grid.Column="4" Style="{StaticResource PlainBtnStyle}">Reset</Button>
-                <Button Grid.Row="11" Grid.Column="5" Height="35" Width="150" HorizontalAlignment="Left" Style="{StaticResource PlainBtnStyle}">Submit</Button>
-            </Grid>
+                    <Label Margin="5" Style="{StaticResource LblStyle}">Source of Data</Label>
+                    <TextBox Tag="enter source of data"  Style="{StaticResource commonTBtyle}" ></TextBox>
+                    <Label  Margin="5" Style="{StaticResource LblStyle}">Status</Label>
+                    <TextBox  Tag="enter status" Style="{StaticResource commonTBtyle}" ></TextBox>
+                    <Label Margin="5" Style="{StaticResource LblStyle}">Facility Type</Label>
+                    <TextBox Tag="enter facility type" Style="{StaticResource commonTBtyle}" ></TextBox>
+                    <Label  Margin="5" Style="{StaticResource LblStyle}">Unique Contact Id</Label>
+                    <TextBox Tag="enter unique contact id" Style="{StaticResource commonTBtyle}" ></TextBox>
+                    <Label  Margin="5" Style="{StaticResource LblStyle}">First Name</Label>
+                    <TextBox  Tag="enter first name" Style="{StaticResource commonTBtyle}" ></TextBox>
+                    <Label  Margin="5" Style="{StaticResource LblStyle}">Last Name</Label>
+                    <TextBox Tag="enter last name" Style="{StaticResource commonTBtyle}" ></TextBox>
+                    <Label Margin="5" Style="{StaticResource LblStyle}">Position</Label>
+                    <TextBox Tag="enter position" Style="{StaticResource commonTBtyle}" ></TextBox>
+                    <Label></Label>
+                    <DockPanel>
+                        <UniformGrid Rows="1">
+                            <Button Height="35" Width="150" HorizontalAlignment="Right"  Style="{StaticResource PlainBtnStyle}">Reset</Button>
+                            <Button Height="35" Width="150" HorizontalAlignment="Left" Style="{StaticResource PlainBtnStyle}">Submit</Button>
+                        </UniformGrid>
+                    </DockPanel>
+                        
+                    <UniformGrid.Background>
+                        <ImageBrush ImageSource="/CareerReport;component/Images/0x600hk.JPG" />
+                    </UniformGrid.Background>
+                </UniformGrid>
+            </DockPanel>
+            
         </DockPanel>
     </Border>
     

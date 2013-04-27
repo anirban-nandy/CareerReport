@@ -12,14 +12,14 @@
                     <Border Name="border" 
                             BorderThickness="1"
                             Padding="4,2" 
-                            BorderBrush="White" 
+                            BorderBrush="#FF525252" 
                             CornerRadius="0" 
                             Background="{TemplateBinding Background}">
                         <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
                     </Border>
                     <ControlTemplate.Triggers>
                         <Trigger Property="IsMouseOver" Value="True">
-                            <Setter TargetName="border" Property="BorderBrush" Value="White" />
+                            <Setter TargetName="border" Property="BorderBrush" Value="#FF525252" />
                             <Setter Property="Button.Background" Value="#FF77733E" />
                             <Setter Property="Button.Foreground" Value="White" />
                         </Trigger>
@@ -47,19 +47,19 @@
                     <Border Name="border" 
                             BorderThickness="1"
                             Padding="4,2" 
-                            BorderBrush="White" 
+                            BorderBrush="#FF525252" 
                             CornerRadius="0" 
                             Background="{TemplateBinding Background}">
                         <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
                     </Border>
                     <ControlTemplate.Triggers>
                         <Trigger Property="IsMouseOver" Value="True">
-                            <Setter TargetName="border" Property="BorderBrush" Value="White" />
+                            <Setter TargetName="border" Property="BorderBrush" Value="#FF525252" />
                             <Setter Property="Button.Background" Value="#FF77733E" />
                             <Setter Property="Button.Foreground" Value="White" />
                         </Trigger>
                         <Trigger Property="IsPressed" Value="True">
-                            <Setter TargetName="border" Property="BorderBrush" Value="White" />
+                            <Setter TargetName="border" Property="BorderBrush" Value="#FF525252" />
                             <Setter Property="Button.Background" Value="#D8D8D8" />
                         </Trigger>
 
@@ -188,8 +188,8 @@
 
     <Style x:Key="LblStyle" TargetType="Label">
         <Setter Property="VerticalContentAlignment" Value="Center" />
-        <Setter Property="HorizontalContentAlignment" Value="Left" />
-        <Setter Property="Foreground" Value="Black" />
+        <Setter Property="HorizontalContentAlignment" Value="Right" />
+        <Setter Property="Foreground" Value="White" />
         <Setter Property="FontWeight" Value="Bold" />
 
     </Style>
