@@ -1,9 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual C# Express 2010
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CareerReport", "CareerReport\CareerReport.csproj", "{FD7BEFA0-BC61-4BB8-9B25-B090805E758D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CareerReportUI", "CareerReport\CareerReportUI.csproj", "{FD7BEFA0-BC61-4BB8-9B25-B090805E758D}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CareerReportStyle", "CareerReportStyle\CareerReportStyle.csproj", "{69247AAF-1D05-4FAB-8862-59A75A226070}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CareerReportDb", "CareerReportDb\CareerReportDb.csproj", "{2CA5319C-8633-4C65-B110-F264D3B6676A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CareerReportData", "CareerReportData\CareerReportData.csproj", "{8D72CAB7-C894-4B4A-A89D-E2DE4553AFE2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -19,6 +23,14 @@ Global
 		{69247AAF-1D05-4FAB-8862-59A75A226070}.Debug|x86.Build.0 = Debug|x86
 		{69247AAF-1D05-4FAB-8862-59A75A226070}.Release|x86.ActiveCfg = Release|x86
 		{69247AAF-1D05-4FAB-8862-59A75A226070}.Release|x86.Build.0 = Release|x86
+		{2CA5319C-8633-4C65-B110-F264D3B6676A}.Debug|x86.ActiveCfg = Debug|x86
+		{2CA5319C-8633-4C65-B110-F264D3B6676A}.Debug|x86.Build.0 = Debug|x86
+		{2CA5319C-8633-4C65-B110-F264D3B6676A}.Release|x86.ActiveCfg = Release|x86
+		{2CA5319C-8633-4C65-B110-F264D3B6676A}.Release|x86.Build.0 = Release|x86
+		{8D72CAB7-C894-4B4A-A89D-E2DE4553AFE2}.Debug|x86.ActiveCfg = Debug|x86
+		{8D72CAB7-C894-4B4A-A89D-E2DE4553AFE2}.Debug|x86.Build.0 = Debug|x86
+		{8D72CAB7-C894-4B4A-A89D-E2DE4553AFE2}.Release|x86.ActiveCfg = Release|x86
+		{8D72CAB7-C894-4B4A-A89D-E2DE4553AFE2}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
