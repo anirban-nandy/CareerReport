@@ -27,6 +27,7 @@
                      <Button Width="30" Height="30" Name="closeBtn" ToolTip="close" Style="{StaticResource TitlebarBTN}" Click="closeBtn_Click">X</Button>
                  </UniformGrid>
         </DockPanel>
+            
             <DockPanel LastChildFill="True">
                 <UniformGrid DockPanel.Dock="Left">
                     <Label></Label>
@@ -41,6 +42,7 @@
                 <UniformGrid DockPanel.Dock="Bottom">
                     <Label></Label>
                 </UniformGrid>
+                
                 <UniformGrid DockPanel.Dock="Top" Columns="2">
                     <Label Margin="5" Style="{StaticResource LblStyle}">Date</Label>
                     <DatePicker Name="presentdateDP" ToolTip="select a date" Margin="5" SelectedDate="{x:Static sys:DateTime.Now}" ></DatePicker>
@@ -83,6 +85,7 @@
                         <UniformGrid Rows="1">
                             <Button Name="resetFieldsBtn" Height="35" Width="150" ToolTip="reset" HorizontalAlignment="Right"  Style="{StaticResource PlainBtnStyle}" Click="resetFieldsBtn_Click">Reset</Button>
                             <Button Name="submitInfoBtn" Height="35" Width="150" ToolTip="submit" HorizontalAlignment="Left" Style="{StaticResource PlainBtnStyle}" Click="submitInfoBtn_Click">Submit</Button>
+                            <Button Name="syncBtn" Height="35" Width="150" ToolTip="Sync" HorizontalAlignment="Right"  Style="{StaticResource PlainBtnStyle}">Sync With Website</Button>
                         </UniformGrid>
                     </DockPanel>
                         
