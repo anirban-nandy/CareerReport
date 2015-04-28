@@ -4,7 +4,7 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         Title="Career Report"
         AllowsTransparency="True" ResizeMode="CanResizeWithGrip" Background="Transparent" 
-        WindowStyle="None" WindowStartupLocation="CenterScreen" MinHeight="600" MinWidth="1024">
+        WindowStyle="None" WindowStartupLocation="CenterScreen" MinHeight="600" WindowState="Maximized" MinWidth="1024">
     <Window.Resources>
         <ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>
